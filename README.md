@@ -1,5 +1,5 @@
-Android Tasks Sample
-====================
+How to run Android Tasks Sample
+===============================
 Overview
 --------
 How to build and execute android-tasks-sample using ant
