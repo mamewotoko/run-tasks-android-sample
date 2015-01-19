@@ -60,3 +60,4 @@ keytool -v -list -alias androiddebugkey -keystore ~/.android/debug.keystore -sto
 Memo
 ----
 * Source code of google-play-servces_lib is required to create R.java
+* TODO: fix this markdown
