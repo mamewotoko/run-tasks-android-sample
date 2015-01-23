@@ -69,4 +69,3 @@ Its finterprint is output like "SHA1: xxxx"
 Memo
 ----
 * Source code of google-play-servces_lib is required to create R.java
-* TODO: fix this markdown
