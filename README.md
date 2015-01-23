@@ -8,17 +8,19 @@ How to build and execute android-tasks-sample using ant
 Build and run
 -------------
 1. Clone sample code
-```bash 
-  hg clone https://code.google.com/p/google-api-java-client.samples/
-```
+
+        ```bash 
+        hg clone https://code.google.com/p/google-api-java-client.samples/
+        ```
 2. Download tasks api client library
   2-1. Download
+
      https://developers.google.com/resources/api-libraries/download/tasks/v1/java
   2-2. copy lib to sample code project
 
-```bash 
-     cp tasks/google-api-services-tasks-v1-rev41-1.19.1.jar tasks/libs/* google-api-java-client.samples/tasks-android-api/libs
-```
+        ```bash 
+        cp tasks/google-api-services-tasks-v1-rev41-1.19.1.jar tasks/libs/* google-api-java-client.samples/tasks-android-api/libs
+        ```
   2-3. remove library which causes build error (why?)
 
         ```bash 
