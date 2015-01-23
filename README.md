@@ -21,21 +21,24 @@ cp tasks/google-api-services-tasks-v1-rev41-1.19.1.jar tasks/libs/* google-api-j
     ```
   2-3. remove library which causes build error (why?)
 
-        <!-- language: bash -->
-        rm libs/transaction-api-1.1.jar
+    ```bash
+rm libs/transaction-api-1.1.jar
+    ```
 3. Copy source of google-api-service_lib
 
-        <!-- language: bash -->
-        mkdir google-api-java-client.samples/tasks-android-api/libsrc
-        cp -r ${ANDROID_HOME}/extras/google/google_play_services/libproject/google-play-services_lib 
+    ```bash
+mkdir google-api-java-client.samples/tasks-android-api/libsrc
+cp -r ${ANDROID_HOME}/extras/google/google_play_services/libproject/google-play-services_lib 
+    ```
 4. Update android project
 
-        <!-- language: bash -->
-        cd google-api-java-client.samples/tasks-android-api/
-        android update project -p . -t android-10 -s -l libsrc/google-play-services_lib/
-        cd libsrc/google-play-services_lib/
-        android update project -p . -t android-10
-        cd ../..
+    ```bash
+cd google-api-java-client.samples/tasks-android-api/
+android update project -p . -t android-10 -s -l libsrc/google-play-services_lib/
+cd libsrc/google-play-services_lib/
+android update project -p . -t android-10
+cd ../..
+    ```
 5. Add following lines to AndroidManifest.xml in application element.
 
     ```xml
@@ -44,19 +47,22 @@ cp tasks/google-api-services-tasks-v1-rev41-1.19.1.jar tasks/libs/* google-api-j
     ````
 6. Build debug version
 
-        <!-- language: bash -->
-        ant debug
+    ```bash
+ant debug
+    ```
 7. Install to device
 
-        <!-- language: bash -->
-        ant installd
+    ```bash
+ant installd
+    ```
 8. Add api key to Google Developers Console
 * Kind: Android App
 * Package: com.google.api.services.samples.tasks.android
 * Fingerprint of certificate: is printed by following command
 
-        <!-- language: bash -->
+    ```bash
         keytool -v -list -alias androiddebugkey -keystore ~/.android/debug.keystore -storepass android -keypass android
+    ```
        SHA1: xxxx
 9. Run on device
 
