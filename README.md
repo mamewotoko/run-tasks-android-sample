@@ -61,9 +61,9 @@ ant installd
 * Fingerprint of certificate: is printed by following command
 
     ```bash
-        keytool -v -list -alias androiddebugkey -keystore ~/.android/debug.keystore -storepass android -keypass android
+keytool -v -list -alias androiddebugkey -keystore ~/.android/debug.keystore -storepass android -keypass android
     ```
-       SHA1: xxxx
+Its finterprint is output like "SHA1: xxxx"
 9. Run on device
 
 Memo
