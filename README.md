@@ -1,5 +1,5 @@
-Android Tasks Sample
-====================
+How to run Android Tasks Sample
+===============================
 Overview
 --------
 How to build and execute android-tasks-sample using ant
@@ -65,9 +65,11 @@ Build and run
         ```bash
         keytool -v -list -alias androiddebugkey -keystore ~/.android/debug.keystore -storepass android -keypass android
         ```
+
       SHA1: xxxx
 9. Run on device
 
 Memo
 ----
 * Source code of google-play-servces_lib is required to create R.java
+* TODO: fix this markdown
