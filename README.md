@@ -38,9 +38,10 @@ cp tasks/google-api-services-tasks-v1-rev41-1.19.1.jar tasks/libs/* google-api-j
         cd ../..
 5. Add following lines to AndroidManifest.xml in application element.
 
-        <!-- language: xml -->
-        <meta-data android:name="com.google.android.gms.version" 
-	           android:value="@integer/google_play_services_version" />
+    ```xml
+<meta-data android:name="com.google.android.gms.version" 
+           android:value="@integer/google_play_services_version" />
+    ````
 6. Build debug version
 
         <!-- language: bash -->
