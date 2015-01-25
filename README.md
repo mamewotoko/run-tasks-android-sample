@@ -3,7 +3,6 @@ How to run Android Tasks Sample
 Overview
 --------
 How to build and execute android-tasks-sample using ant
-(I don't know gradle tool yet and gradle command causes build error.)
 
 Build and run
 -------------
@@ -71,4 +70,11 @@ Memo
 * Source code of google-play-servces_lib is required to create R.java
 * [Instructions for the Tasks V1 Android Sample]{http://samples.google-api-java-client.googlecode.com/hg/tasks-android-sample/instructions.html}
 
-    Using gradle 1.6+
+    Build instruction using gradle 1.6+
+    Point: Use gradle 1.6(or 1.8?), not 2.x
+           Use target 8 api or modify buildToolsVersion and compileSdkVersion
+           In tasks-android-api directroy run
+
+```bash
+gradle assemble
+```
