@@ -69,3 +69,6 @@ Its finterprint is output like "SHA1: xxxx"
 Memo
 ----
 * Source code of google-play-servces_lib is required to create R.java
+* [Instructions for the Tasks V1 Android Sample]{http://samples.google-api-java-client.googlecode.com/hg/tasks-android-sample/instructions.html}
+
+    Using gradle 1.6+
