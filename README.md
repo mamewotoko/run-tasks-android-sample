@@ -69,11 +69,10 @@ Memo
 ----
 * Source code of google-play-servces_lib is required to create R.java
 * [Instructions for the Tasks V1 Android Sample]{http://samples.google-api-java-client.googlecode.com/hg/tasks-android-sample/instructions.html}
-
-    Build instruction using gradle 1.6+
-    Point: Use gradle 1.6(or 1.8?), not 2.x
-           Use target 8 api or modify buildToolsVersion and compileSdkVersion
-           In tasks-android-api directroy run
+    * Build instruction using gradle 1.6+
+    * Use gradle 1.6(or 1.8?), not 2.x
+    * Use target 8 api or modify buildToolsVersion and compileSdkVersion
+    * To compile on the command line, in tasks-android-api directroy run the following command then apk is created in build/apk directory
 
 ```bash
 gradle assemble
