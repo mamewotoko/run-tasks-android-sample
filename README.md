@@ -73,6 +73,6 @@ Memo
     * Use target 8 api or modify buildToolsVersion and compileSdkVersion
     * To compile on the command line, in tasks-android-api directroy run the following command then apk is created in build/apk directory
 
-```bash
+        ```bash
 gradle assemble
-```
+        ```
